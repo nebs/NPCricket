@@ -10,29 +10,26 @@
 Pod::Spec.new do |s|
   s.name             = "NPCricket"
   s.version          = "0.1.0"
-  s.summary          = "A short description of NPCricket."
+  s.summary          = "Send feedback (with a screenshot) directly from your app"
   s.description      = <<-DESC
-                       An optional longer description of NPCricket
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       NPCricket gives your users the ability to send feedback about your app.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/NPCricket"
+  s.homepage         = "https://github.com/nebspetrovic/NPCricket"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Nebojsa Petrovic" => "nebs@causes.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NPCricket.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Nebojsa Petrovic" => "nebspetrovic@gmail.com" }
+  s.source           = { :git => "https://github.com/nebspetrovic/NPCricket.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/nebsp'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/**/*.{h,m}'
   s.resource_bundles = {
-    'NPCricket' => ['Pod/Assets/*.png']
+    'NPCricket' => ['Pod/Assets/*.png', 'Pod/Classes/*.xib']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

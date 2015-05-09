@@ -22,7 +22,7 @@ pod "NPCricket"
 
 ## Author
 
-Nebojsa Petrovic, nebs@causes.com
+Nebojsa Petrovic, nebspetrovic@gmail.com
 
 ## License
 
