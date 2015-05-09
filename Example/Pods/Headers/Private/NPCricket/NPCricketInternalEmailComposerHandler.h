@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/NPCricketInternalEmailComposerHandler.h
+../../../../../Pod/Classes/Handlers/NPCricketInternalEmailComposerHandler.h

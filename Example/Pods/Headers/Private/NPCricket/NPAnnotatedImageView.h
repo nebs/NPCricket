@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/NPAnnotatedImageView.h
+../../../../../Pod/Classes/Views/NPAnnotatedImageView.h

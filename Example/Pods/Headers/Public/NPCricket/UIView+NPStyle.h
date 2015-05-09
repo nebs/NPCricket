@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/UIView+NPStyle.h
+../../../../../Pod/Classes/Categories/UIView+NPStyle.h

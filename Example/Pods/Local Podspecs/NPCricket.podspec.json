@@ -20,7 +20,6 @@
   "source_files": "Pod/Classes/**/*.{h,m}",
   "resource_bundles": {
     "NPCricket": [
-      "Pod/Assets/*.png",
       "Pod/Classes/*.xib"
     ]
   },

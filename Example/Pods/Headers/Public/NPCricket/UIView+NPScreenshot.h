@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/UIView+NPScreenshot.h
+../../../../../Pod/Classes/Categories/UIView+NPScreenshot.h

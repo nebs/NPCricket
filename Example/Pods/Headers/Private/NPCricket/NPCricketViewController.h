@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/NPCricketViewController.h
+../../../../../Pod/Classes/Views/NPCricketViewController.h
