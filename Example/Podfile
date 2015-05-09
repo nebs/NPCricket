@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'NPCricket', :exclusive => true do
+  pod "NPCricket", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "NPCricket", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
