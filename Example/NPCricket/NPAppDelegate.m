@@ -4,7 +4,7 @@
 @implementation NPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [NPCricket setupWithHandler:[NPCricketInternalEmailComposerHandler emailComposerWithToEmailAddress:@"feedback@yourdomain.com" subjectPrefix:@"iOS"]];
+    [NPCricket useInternalEmailComposerWithToEmailAddress:@"feedback@yourdomain.com" subjectPrefix:@"iOS"];
     return YES;
 }
 

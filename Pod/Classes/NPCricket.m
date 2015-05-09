@@ -1,6 +1,7 @@
 #import "NPCricket.h"
 #import <UIKit/UIKit.h>
 #import "UIView+NPScreenshot.h"
+#import "NPCricketInternalEmailComposerHandler.h"
 
 @interface NPCricket ()
 
@@ -22,9 +23,15 @@
     return sharedInstance;
 }
 
+#pragma mark - Convenience Presets
+
++ (void)useInternalEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix {
+    [NPCricket useHandler:[NPCricketInternalEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:subjectPrefix]];
+}
+
 #pragma mark - Public Interface
 
-+ (void)setupWithHandler:(id<NPCricketHandler>)handler {
++ (void)useHandler:(id<NPCricketHandler>)handler {
     [NPCricket sharedInstance].handler = handler;
 }
 
