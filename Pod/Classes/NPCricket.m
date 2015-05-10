@@ -1,7 +1,7 @@
 #import "NPCricket.h"
 #import <UIKit/UIKit.h>
 #import "UIView+NPScreenshot.h"
-#import "NPCricketInternalEmailComposerHandler.h"
+#import "NPCricketEmailComposerHandler.h"
 #import "NPCricketMailgunHandler.h"
 
 @interface NPCricket ()
@@ -42,7 +42,7 @@
 }
 
 + (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix {
-    [NPCricket useHandler:[NPCricketInternalEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:subjectPrefix]];
+    [NPCricket useHandler:[NPCricketEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:subjectPrefix]];
 }
 
 + (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress {

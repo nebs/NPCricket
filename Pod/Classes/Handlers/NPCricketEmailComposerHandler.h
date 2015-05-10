@@ -2,7 +2,7 @@
 #import "NPCricketHandlerProtocol.h"
 #import <MessageUI/MessageUI.h>
 
-@interface NPCricketInternalEmailComposerHandler : NSObject <NPCricketHandler,
+@interface NPCricketEmailComposerHandler : NSObject <NPCricketHandler,
                                                              MFMailComposeViewControllerDelegate>
 
 + (instancetype)emailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix;

@@ -4,9 +4,7 @@
 @implementation NPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Uncomment one of the options below...
-
-    // Example for internal email composer
+    // Example for email composer
 //    [NPCricket useEmailComposerWithToEmailAddress:@"feedback@yourdomain.com"];
 
     // Example for Mailgun email composer
