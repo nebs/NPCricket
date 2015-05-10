@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NPCricket"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Send feedback (with a screenshot) directly from your app"
   s.description      = <<-DESC
                        NPCricket gives your users the ability to send feedback about your app.
