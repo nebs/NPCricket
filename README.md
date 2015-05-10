@@ -80,6 +80,10 @@ If you want to create your own handler simply create a class that conforms to `N
 @end
 ```
 
+## Requirements
+
+Cricket requires iOS 8.0 and above.
+
 ## Installation
 
 NPCricket is available through [CocoaPods](http://cocoapods.org). To install
