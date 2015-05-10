@@ -6,6 +6,7 @@
 @property (nonatomic) MFMailComposeViewController *mailComposeViewController;
 @property (nonatomic) NSString *toEmailAddress;
 @property (nonatomic) NSString *subjectPrefix;
+@property (nonatomic) UIViewController *rootViewController;
 
 @end
 
@@ -17,8 +18,6 @@
     NPCricketInternalEmailComposerHandler *emailComposer = [[NPCricketInternalEmailComposerHandler alloc] init];
     emailComposer.toEmailAddress = toEmailAddress;
     emailComposer.subjectPrefix = subjectPrefix;
-    emailComposer.mailComposeViewController = [[MFMailComposeViewController alloc] init];
-    emailComposer.mailComposeViewController.mailComposeDelegate = emailComposer;
     return emailComposer;
 }
 
@@ -34,18 +33,22 @@
     }
 
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    self.rootViewController = window.rootViewController;
+
+    self.mailComposeViewController = [[MFMailComposeViewController alloc] init];
+    self.mailComposeViewController.mailComposeDelegate = self;
     [self.mailComposeViewController setToRecipients:@[self.toEmailAddress]];
     [self.mailComposeViewController setSubject:[message NP_subjectWithPrefix:self.subjectPrefix]];
     [self.mailComposeViewController setMessageBody:message isHTML:NO];
     NSData *exportData = UIImageJPEGRepresentation(screenshot ,1.0);
     [self.mailComposeViewController addAttachmentData:exportData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
-    [window.rootViewController presentViewController:self.mailComposeViewController animated:YES completion:nil];
+    [self.rootViewController presentViewController:self.mailComposeViewController animated:YES completion:nil];
 }
 
 #pragma mark - MFMailComposeViewControllerDelegate
 
 - (void)mailComposeController:(MFMailComposeViewController*)mailController didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-    [mailController dismissViewControllerAnimated:YES completion:nil];
+    [self.rootViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
