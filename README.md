@@ -74,8 +74,8 @@ If you want to create your own handler simply create a class that conforms to `N
 
 @implementation MyCustomHandler
 
-- (void)NPCricket_processMessage:(NSString *)message screenshot:(UIImage *)screenshot {
-  // Do something with `message` and `screenshot` ...
+- (void)NPCricket_handleFeedback:(NPFeedback *)feedback {
+  // Do something with the feedback ...
 }
 
 @end
