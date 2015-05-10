@@ -1,8 +1,8 @@
 #import "NPCricket.h"
 #import <UIKit/UIKit.h>
 #import "UIView+NPScreenshot.h"
-#import "NPCricketEmailComposerHandler.h"
-#import "NPCricketMailgunHandler.h"
+#import "NPEmailComposerHandler.h"
+#import "NPMailgunHandler.h"
 
 @interface NPCricket ()
 
@@ -38,11 +38,11 @@
                        subjectPrefix:(NSString *)subjectPrefix
                               domain:(NSString *)domain
                               apiKey:(NSString *)apiKey {
-    [NPCricket useHandler:[NPCricketMailgunHandler handlerWithToEmailAddress:toEmailAddress fromEmailAddress:fromEmailAddress subjectPrefix:subjectPrefix domain:domain apiKey:apiKey]];
+    [NPCricket useHandler:[NPMailgunHandler handlerWithToEmailAddress:toEmailAddress fromEmailAddress:fromEmailAddress subjectPrefix:subjectPrefix domain:domain apiKey:apiKey]];
 }
 
 + (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix {
-    [NPCricket useHandler:[NPCricketEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:subjectPrefix]];
+    [NPCricket useHandler:[NPEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:subjectPrefix]];
 }
 
 + (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress {

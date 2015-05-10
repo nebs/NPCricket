@@ -1,7 +1,7 @@
-#import "NPCricketEmailComposerHandler.h"
+#import "NPEmailComposerHandler.h"
 #import "NSString+NPEmail.h"
 
-@interface NPCricketEmailComposerHandler ()
+@interface NPEmailComposerHandler ()
 
 @property (nonatomic) MFMailComposeViewController *mailComposeViewController;
 @property (nonatomic) NSString *toEmailAddress;
@@ -10,19 +10,19 @@
 
 @end
 
-@implementation NPCricketEmailComposerHandler
+@implementation NPEmailComposerHandler
 
 #pragma mark - Initialization
 
 + (instancetype)emailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix {
-    NPCricketEmailComposerHandler *emailComposer = [[NPCricketEmailComposerHandler alloc] init];
+    NPEmailComposerHandler *emailComposer = [[NPEmailComposerHandler alloc] init];
     emailComposer.toEmailAddress = toEmailAddress;
     emailComposer.subjectPrefix = subjectPrefix;
     return emailComposer;
 }
 
 + (instancetype)emailComposerWithToEmailAddress:(NSString *)toEmailAddress {
-    return [NPCricketEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:nil];
+    return [NPEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:nil];
 }
 
 #pragma mark - NPCricketHandler

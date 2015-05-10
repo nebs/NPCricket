@@ -1,9 +1,9 @@
-#import "NPCricketMailgunHandler.h"
+#import "NPMailgunHandler.h"
 #import <mailgun/Mailgun.h>
 #import <mailgun/MGMessage.h>
 #import "NSString+NPEmail.h"
 
-@interface NPCricketMailgunHandler ()
+@interface NPMailgunHandler ()
 
 @property (nonatomic) NSString *toEmailAddress;
 @property (nonatomic) NSString *fromEmailAddress;
@@ -12,14 +12,14 @@
 
 @end
 
-@implementation NPCricketMailgunHandler
+@implementation NPMailgunHandler
 
 + (instancetype)handlerWithToEmailAddress:(NSString *)toEmailAddress
                          fromEmailAddress:(NSString *)fromEmailAddress
                             subjectPrefix:(NSString *)subjectPrefix
                                    domain:(NSString *)domain
                                    apiKey:(NSString *)apiKey {
-    NPCricketMailgunHandler *handler = [[NPCricketMailgunHandler alloc] init];
+    NPMailgunHandler *handler = [[NPMailgunHandler alloc] init];
     handler.subjectPrefix = subjectPrefix;
     handler.toEmailAddress = toEmailAddress;
     handler.fromEmailAddress = fromEmailAddress;

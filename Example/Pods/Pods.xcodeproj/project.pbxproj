@@ -13,7 +13,7 @@
 		027AC65E9A3B7EC2B6DFB724 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072B5E3BFA3BB69A08980968 /* XCTest.framework */; };
 		0281D33D9312A34A4AB389F5 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = A59E41B982D8F8C4193D2EF8 /* EXPMatchers+respondTo.h */; };
 		0397C6392F81110FF5302590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B966AB0E27FCBD0FF66F4A9E /* Foundation.framework */; };
-		03DBD4A4AFDA5A2CC7D4BB80 /* NPCricketEmailComposerHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 76069EB82BD2954898E102D7 /* NPCricketEmailComposerHandler.h */; };
+		03DBD4A4AFDA5A2CC7D4BB80 /* NPEmailComposerHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 76069EB82BD2954898E102D7 /* NPEmailComposerHandler.h */; };
 		0442EAD91B0F281F3BBEF86D /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 214A4E74C0D1385C5120705C /* AFHTTPRequestOperation.h */; };
 		0472FEBF4965EA44D92DD4EB /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F29F16CC212AD399434F1CC /* EXPMatchers+endWith.h */; };
 		06818B63F832ADA627F1AFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B966AB0E27FCBD0FF66F4A9E /* Foundation.framework */; };
@@ -78,7 +78,7 @@
 		44837E20A9AC842BF65DEB6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B966AB0E27FCBD0FF66F4A9E /* Foundation.framework */; };
 		45395AE82159D3A7B07D8D70 /* Pods-Tests-NPCricket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF8291361C6E9055E67ED43 /* Pods-Tests-NPCricket-dummy.m */; };
 		457D7F845FC398F0B735DEE6 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAB1A2A4FF79307FCCEF1DC /* NSValue+Expecta.h */; };
-		45E965E58FC3A77D509E96A8 /* NPCricketEmailComposerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2C9D1191AE12F6B6E2E92D /* NPCricketEmailComposerHandler.m */; };
+		45E965E58FC3A77D509E96A8 /* NPEmailComposerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2C9D1191AE12F6B6E2E92D /* NPEmailComposerHandler.m */; };
 		4691D1D1F7508FF96FB0A42A /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF243211FF8FAF31BA6A4A7 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4830028E465413E4A180D9A6 /* UIView+NPStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C784FF0DB99CE20D877AC1 /* UIView+NPStyle.h */; };
 		49854C90B5488E1A151D5D08 /* Pods-NPCricket-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6298F3D3E70374CB3B0846 /* Pods-NPCricket-AFNetworking-dummy.m */; };
@@ -120,19 +120,19 @@
 		7C90B1977304DDD6B67CF5E9 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CCF8CACDA51F1F06DA3C37 /* EXPMatchers+beInstanceOf.h */; };
 		7D596A1A55E735628DE920EE /* NPAnnotatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 858D495E9B8F513217F5B47A /* NPAnnotatedImageView.h */; };
 		7FDFF506CDADCBD2DB2634B8 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DD34541987E9718C8A04A2 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		800D1A2CD2825081D63794FE /* NPCricketEmailComposerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2C9D1191AE12F6B6E2E92D /* NPCricketEmailComposerHandler.m */; };
+		800D1A2CD2825081D63794FE /* NPEmailComposerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2C9D1191AE12F6B6E2E92D /* NPEmailComposerHandler.m */; };
 		8471F798E27065859FA8E0E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072B5E3BFA3BB69A08980968 /* XCTest.framework */; };
 		84F4E1C9D97C675DB7D692ED /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 835768A60A7AA96FF62FCEE5 /* EXPMatchers+postNotification.h */; };
 		852365B9AECA2A908DC2419B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61176612CD55C5085A6B04 /* MobileCoreServices.framework */; };
 		878570505A6F49750D94D0F4 /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F37867E73C3FBD07C89B230 /* SPTCallSite.h */; };
 		8A4B70B1B4E5B09B52566670 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFF69C3DCF14785F57506 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8BD3EAD47ABBAA1256DE327E /* NPCricketMailgunHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCBD35B3DB449CA425DEE94 /* NPCricketMailgunHandler.h */; };
+		8BD3EAD47ABBAA1256DE327E /* NPMailgunHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCBD35B3DB449CA425DEE94 /* NPMailgunHandler.h */; };
 		8CDEDBDEEFA584DB72C3FA4D /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F46212F7620A3E6E0234D2 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8E3D9F7D6217DEB7FB4E88CA /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = F128FD7335C83042DA2FD9FB /* EXPMatchers+raiseWithReason.h */; };
 		8E4BC8F3140E8F276C54E90A /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B99199831D8F4424BE8814 /* Pods-Tests-dummy.m */; };
 		8E514AC46AEE2157096C0A3C /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 25593939F1FF4F06B93CDCCE /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8ED778211C8A41FCCC1CE4BD /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 682757816DDA5F0AAE830C6D /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		90B26EA60E35A25CF131ACF4 /* NPCricketMailgunHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B6820A61E1B7C9EF11E06 /* NPCricketMailgunHandler.m */; };
+		90B26EA60E35A25CF131ACF4 /* NPMailgunHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B6820A61E1B7C9EF11E06 /* NPMailgunHandler.m */; };
 		91816E980A277D8CA80E769E /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3B426ABE8391E34AE73A6 /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		91A6AA95BD11F5BB71BE39E6 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7C32D6EE91187FC20AC40A /* AFPropertyListRequestOperation.h */; };
 		91E72E43E8227D8D0285B625 /* UIColor+NPCricket.m in Sources */ = {isa = PBXBuildFile; fileRef = 35842CF99A3720D2FA610B5E /* UIColor+NPCricket.m */; };
@@ -154,9 +154,9 @@
 		A6949CF6F21BE7EE509A9287 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B91FBC1A1CAFFBCEEA409E /* Expecta.h */; };
 		A8548B999885C9F7B21FC306 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E078E28E4B1FCB5356972641 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		ABD2AFEEBFD7A0083E4992F5 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 48489DBD5FF911BDC07AFFCF /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		ACB6112C70155750DC5B2C38 /* NPCricketMailgunHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCBD35B3DB449CA425DEE94 /* NPCricketMailgunHandler.h */; };
+		ACB6112C70155750DC5B2C38 /* NPMailgunHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCBD35B3DB449CA425DEE94 /* NPMailgunHandler.h */; };
 		AE8922EF6F7CF80CA6D4EC11 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61176612CD55C5085A6B04 /* MobileCoreServices.framework */; };
-		AE9D15F16E5E62B2121F7A89 /* NPCricketMailgunHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B6820A61E1B7C9EF11E06 /* NPCricketMailgunHandler.m */; };
+		AE9D15F16E5E62B2121F7A89 /* NPMailgunHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B6820A61E1B7C9EF11E06 /* NPMailgunHandler.m */; };
 		AFDD3120C581E6D6552FE1CA /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB88CA8C6D93F4B67948B02 /* AFXMLRequestOperation.h */; };
 		B05099855CC773F81A4C4177 /* Pods-Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BADB4B829FDCDF2912A506 /* Pods-Tests-Specta-dummy.m */; };
 		B232D278FCC399B027A980BE /* NPAnnotatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3567F0C446DAA38FF7AF6E5A /* NPAnnotatedImageView.m */; };
@@ -170,7 +170,7 @@
 		BEFA5D28A2A763E290238D8A /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0935E4EAD9BBD686273F2F /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C0B2EC8EAFD95F151D8A61BE /* UIColor+NPCricket.h in Headers */ = {isa = PBXBuildFile; fileRef = BE27AFF8941FAB92B75E3F4B /* UIColor+NPCricket.h */; };
 		C0DBD02D575A4C51982965B6 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = C85DACEBDCBE2339216AB9BB /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C216B3E5F6C547C61D016867 /* NPCricketEmailComposerHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 76069EB82BD2954898E102D7 /* NPCricketEmailComposerHandler.h */; };
+		C216B3E5F6C547C61D016867 /* NPEmailComposerHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 76069EB82BD2954898E102D7 /* NPEmailComposerHandler.h */; };
 		C374C1A8C8D0D4A6B1FFCF52 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BDB734028A7A6BAE2482D9 /* EXPMatchers+beTruthy.h */; };
 		C3B122B2E938E7B81FB5B314 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B921DF2BB2C95D8325229601 /* AFHTTPClient.h */; };
 		C3E40DD9D6764A1430024084 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C579A9BCC6921A8D9BAAEA /* SpectaTypes.h */; };
@@ -342,7 +342,7 @@
 		1A0935E4EAD9BBD686273F2F /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
 		1E82BA4F33C367930A60C96A /* Pods-NPCricket-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NPCricket-environment.h"; sourceTree = "<group>"; };
 		1EA74C360ED71655383D05AD /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		1FCBD35B3DB449CA425DEE94 /* NPCricketMailgunHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NPCricketMailgunHandler.h; sourceTree = "<group>"; };
+		1FCBD35B3DB449CA425DEE94 /* NPMailgunHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NPMailgunHandler.h; sourceTree = "<group>"; };
 		1FF243211FF8FAF31BA6A4A7 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
 		214A4E74C0D1385C5120705C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		21BB2838805492DEEAAA1C44 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
@@ -354,7 +354,7 @@
 		28C9894504C61D53AC9B8130 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
 		293D8CFBCAC0E1739CD0E487 /* Pods-Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
 		2959A23D3DE4BC5A98DF884C /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
-		299B6820A61E1B7C9EF11E06 /* NPCricketMailgunHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NPCricketMailgunHandler.m; sourceTree = "<group>"; };
+		299B6820A61E1B7C9EF11E06 /* NPMailgunHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NPMailgunHandler.m; sourceTree = "<group>"; };
 		29F1E7044E9EF9F2CAA5D8AF /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B43482A00B5DC2F9E4A40F5 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
 		2C0E9024395386DEF93ED9A5 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
@@ -417,7 +417,7 @@
 		74C6FDAB0ED06996CC3D76BA /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
 		74D684F1595F632DC32F29CB /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
 		75B858F87A379948E181C7A2 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
-		76069EB82BD2954898E102D7 /* NPCricketEmailComposerHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NPCricketEmailComposerHandler.h; sourceTree = "<group>"; };
+		76069EB82BD2954898E102D7 /* NPEmailComposerHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NPEmailComposerHandler.h; sourceTree = "<group>"; };
 		78970F4F35B7EE8234F78249 /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
 		78C864D972ACD86B6F60C862 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
 		7B0262C7DE8708FA04354323 /* Pods-Tests-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-AFNetworking-Private.xcconfig"; path = "../Pods-Tests-AFNetworking/Pods-Tests-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
@@ -468,7 +468,7 @@
 		ABDEDE6DBE4325836608800A /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
 		ACE3BF2BF870A56C21795C5D /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
 		ACE8CB9E96EA9694728CC64D /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
-		AD2C9D1191AE12F6B6E2E92D /* NPCricketEmailComposerHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NPCricketEmailComposerHandler.m; sourceTree = "<group>"; };
+		AD2C9D1191AE12F6B6E2E92D /* NPEmailComposerHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NPEmailComposerHandler.m; sourceTree = "<group>"; };
 		AF3D018F8B03006CAA3EA331 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
 		B08A962E4041C19AD04AE512 /* Pods-Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
 		B15076A992F236BAD33E25FB /* NPCricketViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NPCricketViewController.h; sourceTree = "<group>"; };
@@ -670,11 +670,11 @@
 		2333EBFD2EAC1A12B6E2C39D /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				76069EB82BD2954898E102D7 /* NPCricketEmailComposerHandler.h */,
-				AD2C9D1191AE12F6B6E2E92D /* NPCricketEmailComposerHandler.m */,
+				76069EB82BD2954898E102D7 /* NPEmailComposerHandler.h */,
+				AD2C9D1191AE12F6B6E2E92D /* NPEmailComposerHandler.m */,
 				BC819BAFF314F09D6BDC7092 /* NPCricketHandlerProtocol.h */,
-				1FCBD35B3DB449CA425DEE94 /* NPCricketMailgunHandler.h */,
-				299B6820A61E1B7C9EF11E06 /* NPCricketMailgunHandler.m */,
+				1FCBD35B3DB449CA425DEE94 /* NPMailgunHandler.h */,
+				299B6820A61E1B7C9EF11E06 /* NPMailgunHandler.m */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -1090,9 +1090,9 @@
 			files = (
 				E130638B019D86F290C048E1 /* NPAnnotatedImageView.h in Headers */,
 				797956757C580D9BC9F16E0B /* NPCricket.h in Headers */,
-				C216B3E5F6C547C61D016867 /* NPCricketEmailComposerHandler.h in Headers */,
+				C216B3E5F6C547C61D016867 /* NPEmailComposerHandler.h in Headers */,
 				966881D8E15121346B3D212D /* NPCricketHandlerProtocol.h in Headers */,
-				ACB6112C70155750DC5B2C38 /* NPCricketMailgunHandler.h in Headers */,
+				ACB6112C70155750DC5B2C38 /* NPMailgunHandler.h in Headers */,
 				C7F6B97A186C3DF25FA22843 /* NPCricketViewController.h in Headers */,
 				3500C0EAF4FFF55E5A1322EA /* NPFeedback.h in Headers */,
 				33D44F3C3C8E7C934BFC498D /* NSString+NPEmail.h in Headers */,
@@ -1210,9 +1210,9 @@
 			files = (
 				7D596A1A55E735628DE920EE /* NPAnnotatedImageView.h in Headers */,
 				C4F92E8E671413BF26B9962E /* NPCricket.h in Headers */,
-				03DBD4A4AFDA5A2CC7D4BB80 /* NPCricketEmailComposerHandler.h in Headers */,
+				03DBD4A4AFDA5A2CC7D4BB80 /* NPEmailComposerHandler.h in Headers */,
 				1F34886753714EF98A75F2B3 /* NPCricketHandlerProtocol.h in Headers */,
-				8BD3EAD47ABBAA1256DE327E /* NPCricketMailgunHandler.h in Headers */,
+				8BD3EAD47ABBAA1256DE327E /* NPMailgunHandler.h in Headers */,
 				FF8E62335D50C88C6FB22F7D /* NPCricketViewController.h in Headers */,
 				6A9451EF039D809AA9B1936C /* NPFeedback.h in Headers */,
 				F58182A2D177C63CC7C7B5CE /* NSString+NPEmail.h in Headers */,
@@ -1606,8 +1606,8 @@
 			files = (
 				0D798564463393C232D4ECDB /* NPAnnotatedImageView.m in Sources */,
 				1C7AAF1C0520D4BF6A362BAB /* NPCricket.m in Sources */,
-				45E965E58FC3A77D509E96A8 /* NPCricketEmailComposerHandler.m in Sources */,
-				AE9D15F16E5E62B2121F7A89 /* NPCricketMailgunHandler.m in Sources */,
+				45E965E58FC3A77D509E96A8 /* NPEmailComposerHandler.m in Sources */,
+				AE9D15F16E5E62B2121F7A89 /* NPMailgunHandler.m in Sources */,
 				4BC1CF455705EEF318E24ED3 /* NPCricketViewController.m in Sources */,
 				D0ABD1AE0360EB13B2B69D17 /* NPFeedback.m in Sources */,
 				FB2EB73907EDDF808208D689 /* NSString+NPEmail.m in Sources */,
@@ -1665,8 +1665,8 @@
 			files = (
 				B232D278FCC399B027A980BE /* NPAnnotatedImageView.m in Sources */,
 				A4FC4FB166ACCB47AD206938 /* NPCricket.m in Sources */,
-				800D1A2CD2825081D63794FE /* NPCricketEmailComposerHandler.m in Sources */,
-				90B26EA60E35A25CF131ACF4 /* NPCricketMailgunHandler.m in Sources */,
+				800D1A2CD2825081D63794FE /* NPEmailComposerHandler.m in Sources */,
+				90B26EA60E35A25CF131ACF4 /* NPMailgunHandler.m in Sources */,
 				35083D529B523E9A8E42DCDC /* NPCricketViewController.m in Sources */,
 				ECE775C155D704352B5C36DE /* NPFeedback.m in Sources */,
 				FFB8081D8684BB0D7213F726 /* NSString+NPEmail.m in Sources */,
