@@ -59,8 +59,8 @@ Cricket does not show itself automatically. Instead, you must call `[NPCricket s
 Cricket is designed to be extensible by relying on "handlers" to process the feedback. Any class can become a handler by conforming to the `NPCricketHandler` protocol. This way you could for example send the feedback directly to your server via a custom API.
 
 For your convenience I've included the following handlers:
-- `NPCricketEmailComposerHandler` : This will show the built-in iOS email composer.
-- `NPCricketMailgunHandler` : This will send the feedback directly via Mailgun.
+- `NPEmailComposerHandler` : This will show the built-in iOS email composer.
+- `NPMailgunHandler` : This will send the feedback directly via Mailgun.
 
 ## Creating Handlers
 
