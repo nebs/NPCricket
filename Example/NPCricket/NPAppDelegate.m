@@ -10,7 +10,8 @@
 //    [NPCricket useEmailComposerWithToEmailAddress:@"feedback@yourdomain.com"];
 
     // Example for Mailgun email composer
-//    [NPCricket useMailgunWithToEmailAddress:@"feedback@yourdomain.com"
+//    [NPCricket useMailgunWithToEmailAddress:@"Name <feedback@yourdomain.com>"
+//                           fromEmailAddress:@"Name <cricket@yourdomain.com>"
 //                                     domain:@"<INSERT_MAILGUN_DOMAIN>"
 //                                     apiKey:@"<INSERT_MAILGUN_API_KEY"];
     return YES;
