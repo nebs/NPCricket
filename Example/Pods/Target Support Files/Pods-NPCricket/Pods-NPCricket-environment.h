@@ -6,9 +6,21 @@
 // project.
 
 
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 1
+#define COCOAPODS_VERSION_MINOR_AFNetworking 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking 0
+
 // NPCricket
 #define COCOAPODS_POD_AVAILABLE_NPCricket
 #define COCOAPODS_VERSION_MAJOR_NPCricket 0
 #define COCOAPODS_VERSION_MINOR_NPCricket 1
 #define COCOAPODS_VERSION_PATCH_NPCricket 0
+
+// mailgun
+#define COCOAPODS_POD_AVAILABLE_mailgun
+#define COCOAPODS_VERSION_MAJOR_mailgun 1
+#define COCOAPODS_VERSION_MINOR_mailgun 0
+#define COCOAPODS_VERSION_PATCH_mailgun 3
 

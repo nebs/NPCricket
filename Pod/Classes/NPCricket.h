@@ -8,6 +8,10 @@
 + (void)show;
 
 // Convenience presets
++ (void)useMailgunWithToEmailAddress:(NSString *)toEmailAddress
+                       subjectPrefix:(NSString *)subjectPrefix
+                              domain:(NSString *)domain
+                              apiKey:(NSString *)apiKey;
 + (void)useInternalEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix;
 
 @end

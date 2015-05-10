@@ -1,6 +1,5 @@
 #import "NPCricketInternalEmailComposerHandler.h"
-
-NSUInteger const kNPCricketInternalEmailComposerHandlerSubjectMaxCharacterCount = 40;
+#import "NSString+NPEmail.h"
 
 @interface NPCricketInternalEmailComposerHandler ()
 
@@ -35,20 +34,8 @@ NSUInteger const kNPCricketInternalEmailComposerHandlerSubjectMaxCharacterCount 
     }
 
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-
-    NSMutableString *subject = [[NSMutableString alloc] initWithString:@""];
-    if (self.subjectPrefix) {
-        [subject appendFormat:@"[%@] ", self.subjectPrefix];
-    }
-
-    if ([message length] < kNPCricketInternalEmailComposerHandlerSubjectMaxCharacterCount) {
-        [subject appendString:message];
-    } else {
-        [subject appendFormat:@"%@...", [message substringWithRange:NSMakeRange(0, kNPCricketInternalEmailComposerHandlerSubjectMaxCharacterCount)]];
-    }
-
     [self.mailComposeViewController setToRecipients:@[self.toEmailAddress]];
-    [self.mailComposeViewController setSubject:[subject copy]];
+    [self.mailComposeViewController setSubject:[message NP_subjectWithPrefix:self.subjectPrefix]];
     [self.mailComposeViewController setMessageBody:message isHTML:NO];
     NSData *exportData = UIImageJPEGRepresentation(screenshot ,1.0);
     [self.mailComposeViewController addAttachmentData:exportData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];

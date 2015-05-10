@@ -20,4 +20,5 @@ Pod::Spec.new do |s|
     'NPCricket' => ['Pod/Classes/*.xib']
   }
   s.public_header_files = 'Pod/Classes/**/*.h'
+  s.dependency 'mailgun', '~> 1.0'
 end
