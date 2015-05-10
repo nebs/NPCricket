@@ -82,7 +82,10 @@
 - (void)cricketViewController:(NPCricketViewController *)cricketViewController didSubmitMessage:(NSString *)message screenshot:(UIImage *)screenshot {
     [cricketViewController.presentingViewController dismissViewControllerAnimated:YES completion:^{
         self.isShowing = NO;
-        [self.handler NPCricket_processMessage:message screenshot:screenshot];
+        NPFeedback *feedback = [[NPFeedback alloc] init];
+        feedback.message = message;
+        feedback.screenshot = screenshot;
+        [self.handler NPCricket_handleFeedback:feedback];
     }];
 }
 

@@ -29,12 +29,12 @@
 
 #pragma mark - NPCricketHandler
 
-- (void)NPCricket_processMessage:(NSString *)message screenshot:(UIImage *)screenshot {
+- (void)NPCricket_handleFeedback:(NPFeedback *)feedback {
     MGMessage *mailgunMessage = [MGMessage messageFrom:self.fromEmailAddress
                                                     to:self.toEmailAddress
-                                               subject:[message NP_subjectWithPrefix:self.subjectPrefix]
-                                                  body:message];
-    [mailgunMessage addImage:screenshot withName:@"screenshot.jpeg" type:JPEGFileType];
+                                               subject:[feedback.message NP_subjectWithPrefix:self.subjectPrefix]
+                                                  body:feedback.message];
+    [mailgunMessage addImage:feedback.screenshot withName:@"screenshot.jpeg" type:JPEGFileType];
     [self.mailgun sendMessage:mailgunMessage];
 }
 

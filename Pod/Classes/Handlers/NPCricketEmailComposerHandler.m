@@ -27,7 +27,7 @@
 
 #pragma mark - NPCricketHandler
 
-- (void)NPCricket_processMessage:(NSString *)message screenshot:(UIImage *)screenshot {
+- (void)NPCricket_handleFeedback:(NPFeedback *)feedback {
     if ([self.toEmailAddress length] <= 0) {
         return;
     }
@@ -38,9 +38,9 @@
     self.mailComposeViewController = [[MFMailComposeViewController alloc] init];
     self.mailComposeViewController.mailComposeDelegate = self;
     [self.mailComposeViewController setToRecipients:@[self.toEmailAddress]];
-    [self.mailComposeViewController setSubject:[message NP_subjectWithPrefix:self.subjectPrefix]];
-    [self.mailComposeViewController setMessageBody:message isHTML:NO];
-    NSData *exportData = UIImageJPEGRepresentation(screenshot ,1.0);
+    [self.mailComposeViewController setSubject:[feedback.message NP_subjectWithPrefix:self.subjectPrefix]];
+    [self.mailComposeViewController setMessageBody:feedback.message isHTML:NO];
+    NSData *exportData = UIImageJPEGRepresentation(feedback.screenshot ,1.0);
     [self.mailComposeViewController addAttachmentData:exportData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
     [self.rootViewController presentViewController:self.mailComposeViewController animated:YES completion:nil];
 }
