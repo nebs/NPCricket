@@ -519,6 +519,18 @@
 				GCC_PREFIX_HEADER = "NPCricket/NPCricket-Prefix.pch";
 				INFOPLIST_FILE = "NPCricket/NPCricket-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-NPCricket-AFNetworking\"",
+					"-l\"Pods-NPCricket-NPCricket\"",
+					"-l\"Pods-NPCricket-mailgun\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -535,6 +547,18 @@
 				GCC_PREFIX_HEADER = "NPCricket/NPCricket-Prefix.pch";
 				INFOPLIST_FILE = "NPCricket/NPCricket-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-NPCricket-AFNetworking\"",
+					"-l\"Pods-NPCricket-NPCricket\"",
+					"-l\"Pods-NPCricket-mailgun\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

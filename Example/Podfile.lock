@@ -3,7 +3,7 @@ PODS:
   - Expecta (1.0.0)
   - mailgun (1.0.3):
     - AFNetworking (~> 1.1.0)
-  - NPCricket (0.1.0):
+  - NPCricket (0.1.1):
     - mailgun (~> 1.0)
   - Specta (1.0.0)
 
@@ -20,7 +20,7 @@ SPEC CHECKSUMS:
   AFNetworking: e6427e782b25a2289d909960df8ef41358b3277c
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
   mailgun: 17290deea4db24050dd03ca59cd7385d508904b3
-  NPCricket: 4aeefa5ebad1564d2e7dbbafeaf96b74783f5740
+  NPCricket: 1beb08f0148ec1406a61fa14890529880fbe74ca
   Specta: 96fe05fe5c7348b5223f85e862904f6e832abb14
 
 COCOAPODS: 0.37.1

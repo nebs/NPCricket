@@ -27,8 +27,8 @@
 #pragma mark - NPCricketHandler
 
 - (void)NPCricket_processMessage:(NSString *)message screenshot:(UIImage *)screenshot {
-    MGMessage *mailgunMessage = [MGMessage messageFrom:@"Cricket <cricket@foo.com>"
-                                                    to:[NSString stringWithFormat:@"Cricket <%@>", self.toEmailAddress]
+    MGMessage *mailgunMessage = [MGMessage messageFrom:@"Cricket"
+                                                    to:[NSString stringWithFormat:@"<%@>", self.toEmailAddress]
                                                subject:[message NP_subjectWithPrefix:self.subjectPrefix]
                                                   body:message];
     [mailgunMessage addImage:screenshot withName:@"screenshot.jpeg" type:JPEGFileType];
