@@ -22,6 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		809733531AFE95D6001B0437 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809733511AFE95D6001B0437 /* Main_iPad.storyboard */; };
+		80B8721E1AFEE8D4003E9807 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B8721D1AFEE8D4003E9807 /* SystemConfiguration.framework */; };
+		80B872201AFEE8DC003E9807 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B8721F1AFEE8DC003E9807 /* MobileCoreServices.framework */; };
 		AADD41662D8036B6059B0635 /* libPods-NPCricket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C00682CF6708A56FE55729 /* libPods-NPCricket.a */; };
 		CD90DC1B24EC018B0F71F063 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 448852CE660DCB4977CD328D /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		764EF523C498C619A15B8A00 /* Pods-NPCricket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPCricket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NPCricket/Pods-NPCricket.debug.xcconfig"; sourceTree = "<group>"; };
 		809733521AFE95D6001B0437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		80B8721D1AFEE8D4003E9807 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		80B8721F1AFEE8DC003E9807 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B6CD11C6F6386AD09E7D0817 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B727A26D6842369F86136B36 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E0F290E7B547607B9E592A10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B872201AFEE8DC003E9807 /* MobileCoreServices.framework in Frameworks */,
+				80B8721E1AFEE8D4003E9807 /* SystemConfiguration.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -130,6 +136,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80B8721F1AFEE8DC003E9807 /* MobileCoreServices.framework */,
+				80B8721D1AFEE8D4003E9807 /* SystemConfiguration.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
