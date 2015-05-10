@@ -33,7 +33,7 @@
     MGMessage *mailgunMessage = [MGMessage messageFrom:self.fromEmailAddress
                                                     to:self.toEmailAddress
                                                subject:[feedback.message NP_subjectWithPrefix:self.subjectPrefix]
-                                                  body:feedback.message];
+                                                  body:feedback.messageWithMetaData];
     [mailgunMessage addImage:feedback.screenshot withName:@"screenshot.jpeg" type:JPEGFileType];
     [self.mailgun sendMessage:mailgunMessage];
 }

@@ -39,7 +39,7 @@
     self.mailComposeViewController.mailComposeDelegate = self;
     [self.mailComposeViewController setToRecipients:@[self.toEmailAddress]];
     [self.mailComposeViewController setSubject:[feedback.message NP_subjectWithPrefix:self.subjectPrefix]];
-    [self.mailComposeViewController setMessageBody:feedback.message isHTML:NO];
+    [self.mailComposeViewController setMessageBody:feedback.messageWithMetaData isHTML:NO];
     NSData *exportData = UIImageJPEGRepresentation(feedback.screenshot ,1.0);
     [self.mailComposeViewController addAttachmentData:exportData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
     [self.rootViewController presentViewController:self.mailComposeViewController animated:YES completion:nil];
