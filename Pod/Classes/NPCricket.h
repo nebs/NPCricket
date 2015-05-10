@@ -9,9 +9,13 @@
 
 // Convenience presets
 + (void)useMailgunWithToEmailAddress:(NSString *)toEmailAddress
+                              domain:(NSString *)domain
+                              apiKey:(NSString *)apiKey;
++ (void)useMailgunWithToEmailAddress:(NSString *)toEmailAddress
                        subjectPrefix:(NSString *)subjectPrefix
                               domain:(NSString *)domain
                               apiKey:(NSString *)apiKey;
-+ (void)useInternalEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix;
++ (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix;
++ (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress;
 
 @end

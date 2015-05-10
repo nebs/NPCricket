@@ -13,8 +13,6 @@
 
 @implementation NPCricketMailgunHandler
 
-#pragma mark - NPCricketHandler
-
 + (instancetype)handlerWithToEmailAddress:(NSString *)toEmailAddress
                             subjectPrefix:(NSString *)subjectPrefix
                                    domain:(NSString *)domain
@@ -25,6 +23,8 @@
     handler.mailgun = [Mailgun clientWithDomain:domain apiKey:apiKey];
     return handler;
 }
+
+#pragma mark - NPCricketHandler
 
 - (void)NPCricket_processMessage:(NSString *)message screenshot:(UIImage *)screenshot {
     MGMessage *mailgunMessage = [MGMessage messageFrom:@"Cricket <cricket@foo.com>"
