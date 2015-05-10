@@ -5,11 +5,80 @@
 [![License](https://img.shields.io/cocoapods/l/NPCricket.svg?style=flat)](http://cocoapods.org/pods/NPCricket)
 [![Platform](https://img.shields.io/cocoapods/p/NPCricket.svg?style=flat)](http://cocoapods.org/pods/NPCricket)
 
-## Usage
+## About
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Cricket is an iOS library for sending feedback directly from within the app. It grabs a screenshot, some feedback and sends the data to wherever you want (see overview below for details).
 
-## Requirements
+![GitHub Logo](/demo.gif)
+
+## Example Usage (with built-in composer)
+
+In your app delegate:
+```objective-c
+#import <NPCricket/NPCricket.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [NPCricket useEmailComposerWithToEmailAddress:@"feedback@yourdomain.com"];
+  // ... your code here ...
+  return YES;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        [NPCricket show];
+    }
+}
+```
+
+## Example Usage (with Mailgun)
+
+In your app delegate:
+```objective-c
+#import <NPCricket/NPCricket.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [NPCricket useMailgunWithToEmailAddress:@"feedback@yourdomain.com"
+                                   domain:@"<INSERT_MAILGUN_DOMAIN>"
+                                   apiKey:@"<INSERT_MAILGUN_API_KEY"];
+  // ... your code here ...
+  return YES;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        [NPCricket show];
+    }
+}
+```
+
+## Overview
+
+Cricket does not show itself automatically. Instead, you must call `[NPCricket show]` yourself. One example would be to show it when the user shakes their phone (see the example above).
+
+Cricket is designed to be extensible by relying on "handlers" to process the feedback. Any class can become a handler by conforming to the `NPCricketHandler` protocol. This way you could for example send the feedback directly to your server via a custom API.
+
+For your convenience I've included the following handlers:
+- `NPCricketInternalEmailComposerHandler` : This will show the built-in iOS email composer.
+- `NPCricketMailgunHandler` : This will send the feedback directly via Mailgun.
+
+## Creating Handlers
+
+If you want to create your own handler simply create a class that conforms to `NPCricketHandler` and implement the single method, like so:
+
+```objective-c
+#import "NPCricketHandlerProtocol.h"
+
+@interface MyCustomHandler : NSObject <NPCricketHandler>
+@end
+
+@implementation MyCustomHandler
+
+- (void)NPCricket_processMessage:(NSString *)message screenshot:(UIImage *)screenshot {
+  // Do something with `message` and `screenshot` ...
+}
+
+@end
+```
 
 ## Installation
 
