@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*.{h,m}'
   s.resource_bundles = {
-    'NPCricket' => ['Pod/Classes/*.xib']
+    'NPCricket' => ['Pod/Classes/**/*.xib']
   }
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'mailgun', '~> 1.0'
