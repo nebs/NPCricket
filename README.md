@@ -37,7 +37,8 @@ In your app delegate:
 #import <NPCricket/NPCricket.h>
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  [NPCricket useMailgunWithToEmailAddress:@"feedback@yourdomain.com"
+  [NPCricket useMailgunWithToEmailAddress:@"Name <feedback@yourdomain.com>"
+                         fromEmailAddress:@"Name <cricket@yourdomain.com>"
                                    domain:@"<INSERT_MAILGUN_DOMAIN>"
                                    apiKey:@"<INSERT_MAILGUN_API_KEY"];
   // ... your code here ...
@@ -78,6 +79,12 @@ If you want to create your own handler simply create a class that conforms to `N
 }
 
 @end
+```
+
+Then you simply tell `NPCricket` to use it, like so:
+```objective-c
+MyCustomHandler *myCustomHandler = [[MyCustomHandler alloc] init];
+[NPCricket useHandler:myCustomHandler];
 ```
 
 ## Requirements
