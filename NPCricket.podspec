@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NPCricket"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Send feedback (with a screenshot) directly from your app"
   s.description      = <<-DESC
                        NPCricket gives your users the ability to send feedback about your app.
@@ -20,5 +20,4 @@ Pod::Spec.new do |s|
     'NPCricket' => ['Pod/Classes/**/*.xib']
   }
   s.public_header_files = 'Pod/Classes/**/*.h'
-  s.dependency 'mailgun', '~> 1.0'
 end

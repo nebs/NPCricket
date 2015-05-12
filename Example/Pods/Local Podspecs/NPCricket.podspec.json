@@ -1,6 +1,6 @@
 {
   "name": "NPCricket",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "Send feedback (with a screenshot) directly from your app",
   "description": "                       NPCricket gives your users the ability to send feedback about your app.\n",
   "homepage": "https://github.com/nebspetrovic/NPCricket",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/nebspetrovic/NPCricket.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "social_media_url": "https://twitter.com/nebsp",
   "platforms": {
@@ -23,10 +23,5 @@
       "Pod/Classes/**/*.xib"
     ]
   },
-  "public_header_files": "Pod/Classes/**/*.h",
-  "dependencies": {
-    "mailgun": [
-      "~> 1.0"
-    ]
-  }
+  "public_header_files": "Pod/Classes/**/*.h"
 }

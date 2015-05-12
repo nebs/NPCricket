@@ -2,7 +2,6 @@
 #import <UIKit/UIKit.h>
 #import "UIView+NPScreenshot.h"
 #import "NPEmailComposerHandler.h"
-#import "NPMailgunHandler.h"
 
 @interface NPCricket ()
 
@@ -25,21 +24,6 @@
 }
 
 #pragma mark - Convenience Presets
-
-+ (void)useMailgunWithToEmailAddress:(NSString *)toEmailAddress
-                    fromEmailAddress:(NSString *)fromEmailAddress
-                              domain:(NSString *)domain
-                              apiKey:(NSString *)apiKey {
-    [NPCricket useMailgunWithToEmailAddress:toEmailAddress fromEmailAddress:fromEmailAddress subjectPrefix:nil domain:domain apiKey:apiKey];
-}
-
-+ (void)useMailgunWithToEmailAddress:(NSString *)toEmailAddress
-                    fromEmailAddress:(NSString *)fromEmailAddress
-                       subjectPrefix:(NSString *)subjectPrefix
-                              domain:(NSString *)domain
-                              apiKey:(NSString *)apiKey {
-    [NPCricket useHandler:[NPMailgunHandler handlerWithToEmailAddress:toEmailAddress fromEmailAddress:fromEmailAddress subjectPrefix:subjectPrefix domain:domain apiKey:apiKey]];
-}
 
 + (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix {
     [NPCricket useHandler:[NPEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:subjectPrefix]];
