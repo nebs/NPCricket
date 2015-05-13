@@ -7,8 +7,4 @@
 + (void)useHandler:(id<NPCricketHandler>)handler;
 + (void)show;
 
-// Convenience presets
-+ (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix;
-+ (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress;
-
 @end

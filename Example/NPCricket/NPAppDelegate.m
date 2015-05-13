@@ -1,10 +1,12 @@
 #import "NPAppDelegate.h"
 #import <NPCricket/NPCricket.h>
+#import <NPCricket/NPNativeEmailHandler.h>
 
 @implementation NPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [NPCricket useEmailComposerWithToEmailAddress:@"feedback@yourdomain.com"];
+    NPNativeEmailHandler *nativeEmailHandler = [NPNativeEmailHandler handlerWithToEmailAddress:@"feedback@yourdomain.com"];
+    [NPCricket useHandler:nativeEmailHandler];
     return YES;
 }
 

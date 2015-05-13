@@ -1,7 +1,7 @@
 #import "NPCricket.h"
 #import <UIKit/UIKit.h>
 #import "UIView+NPScreenshot.h"
-#import "NPEmailComposerHandler.h"
+#import "NPNativeEmailHandler.h"
 
 @interface NPCricket ()
 
@@ -21,16 +21,6 @@
         sharedInstance = [[self alloc] init];
     });
     return sharedInstance;
-}
-
-#pragma mark - Convenience Presets
-
-+ (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress subjectPrefix:(NSString *)subjectPrefix {
-    [NPCricket useHandler:[NPEmailComposerHandler emailComposerWithToEmailAddress:toEmailAddress subjectPrefix:subjectPrefix]];
-}
-
-+ (void)useEmailComposerWithToEmailAddress:(NSString *)toEmailAddress {
-    [NPCricket useEmailComposerWithToEmailAddress:toEmailAddress subjectPrefix:nil];
 }
 
 #pragma mark - Public Interface
