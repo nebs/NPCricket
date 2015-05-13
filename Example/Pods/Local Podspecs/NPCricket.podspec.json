@@ -1,6 +1,6 @@
 {
   "name": "NPCricket",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "Send feedback (with a screenshot) directly from your app",
   "description": "                       NPCricket gives your users the ability to send feedback about your app.\n",
   "homepage": "https://github.com/nebspetrovic/NPCricket",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/nebspetrovic/NPCricket.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "social_media_url": "https://twitter.com/nebsp",
   "platforms": {

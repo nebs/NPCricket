@@ -1,6 +1,6 @@
 PODS:
   - Expecta (1.0.0)
-  - NPCricket (0.1.2)
+  - NPCricket (0.1.3)
   - Specta (1.0.0)
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
-  NPCricket: 2bd67e3263fd617e6ada0e4d8abb818dc5d95b5d
+  NPCricket: 87012233fbc71537d5473240d910ba7a3db02603
   Specta: 96fe05fe5c7348b5223f85e862904f6e832abb14
 
 COCOAPODS: 0.37.1
