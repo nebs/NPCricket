@@ -1,8 +1,8 @@
 {
   "name": "NPCricket",
   "version": "0.1.3",
-  "summary": "Send feedback (with a screenshot) directly from your app",
-  "description": "                       NPCricket gives your users the ability to send feedback about your app.\n",
+  "summary": "Allow users to send feedback directly from your iOS app",
+  "description": "                       Allow users to send feedback directly from your iOS app\n",
   "homepage": "https://github.com/nebspetrovic/NPCricket",
   "license": "MIT",
   "authors": {
@@ -17,11 +17,23 @@
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*.{h,m}",
+  "source_files": [
+    "Pod/Classes/*.{h,m}",
+    "Pod/Classes/Categories/*.{h,m}",
+    "Pod/Classes/Handlers/*.h",
+    "Pod/Classes/Models/*.{h,m}",
+    "Pod/Classes/Views/*.{h,m}"
+  ],
   "resource_bundles": {
     "NPCricket": [
       "Pod/Classes/**/*.xib"
     ]
   },
-  "public_header_files": "Pod/Classes/**/*.h"
+  "public_header_files": "Pod/Classes/**/*.h",
+  "subspecs": [
+    {
+      "name": "NativeEmail",
+      "source_files": "Pod/Classes/Handlers/NativeEmail/*.{h,m}"
+    }
+  ]
 }
