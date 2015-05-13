@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Handlers/NPEmailComposerHandler.h
+../../../../../Pod/Classes/Handlers/NativeEmail/NPEmailComposerHandler.h
