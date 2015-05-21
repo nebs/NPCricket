@@ -1,12 +1,13 @@
 #import "NPNativeEmailHandler.h"
 #import "NSString+NPEmail.h"
+#import "UIViewController+NPHierarchy.h"
 
 @interface NPNativeEmailHandler ()
 
 @property (nonatomic) MFMailComposeViewController *mailComposeViewController;
 @property (nonatomic) NSString *toEmailAddress;
 @property (nonatomic) NSString *subjectPrefix;
-@property (nonatomic) UIViewController *rootViewController;
+@property (nonatomic) UIViewController *baseViewController;
 
 @end
 
@@ -33,7 +34,7 @@
     }
 
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    self.rootViewController = window.rootViewController;
+    self.baseViewController = [window.rootViewController NP_topMostViewController];
 
     self.mailComposeViewController = [[MFMailComposeViewController alloc] init];
     self.mailComposeViewController.mailComposeDelegate = self;
@@ -42,13 +43,13 @@
     [self.mailComposeViewController setMessageBody:feedback.messageWithMetaData isHTML:NO];
     NSData *exportData = UIImageJPEGRepresentation(feedback.screenshot ,1.0);
     [self.mailComposeViewController addAttachmentData:exportData mimeType:@"image/jpeg" fileName:@"screenshot.jpeg"];
-    [self.rootViewController presentViewController:self.mailComposeViewController animated:YES completion:nil];
+    [self.baseViewController presentViewController:self.mailComposeViewController animated:YES completion:nil];
 }
 
 #pragma mark - MFMailComposeViewControllerDelegate
 
 - (void)mailComposeController:(MFMailComposeViewController*)mailController didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-    [self.rootViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.baseViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

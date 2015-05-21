@@ -2,11 +2,13 @@
 #import <UIKit/UIKit.h>
 #import "UIView+NPScreenshot.h"
 #import "NPNativeEmailHandler.h"
+#import "UIViewController+NPHierarchy.h"
 
 @interface NPCricket ()
 
 @property (nonatomic) id<NPCricketHandler> handler;
 @property (nonatomic) BOOL isShowing;
+@property (nonatomic) UIViewController *baseViewController;
 
 @end
 
@@ -43,9 +45,10 @@
         self.isShowing = YES;
         NPCricketViewController *cricketViewController = [[NPCricketViewController alloc] initWithScreenshot:[window NP_screenshot]];
         cricketViewController.delegate = self;
-        [window.rootViewController presentViewController:cricketViewController animated:YES completion:nil];
+        self.baseViewController = [window.rootViewController NP_topMostViewController];
+        [self.baseViewController presentViewController:cricketViewController animated:YES completion:nil];
     } else {
-        [window.rootViewController dismissViewControllerAnimated:YES completion:^{
+        [self.baseViewController dismissViewControllerAnimated:YES completion:^{
             self.isShowing = NO;
         }];
     }
@@ -54,7 +57,7 @@
 #pragma mark - NPCricketViewControllerDelegate
 
 - (void)cricketViewController:(NPCricketViewController *)cricketViewController didSubmitMessage:(NSString *)message screenshot:(UIImage *)screenshot {
-    [cricketViewController.presentingViewController dismissViewControllerAnimated:YES completion:^{
+    [self.baseViewController dismissViewControllerAnimated:YES completion:^{
         self.isShowing = NO;
         NPFeedback *feedback = [[NPFeedback alloc] init];
         feedback.message = message;
@@ -64,7 +67,7 @@
 }
 
 - (void)cricketViewControllerDidCancel:(NPCricketViewController *)cricketViewController {
-    [cricketViewController.presentingViewController dismissViewControllerAnimated:YES completion:^{
+    [self.baseViewController dismissViewControllerAnimated:YES completion:^{
         self.isShowing = NO;
     }];
 }

@@ -83,6 +83,7 @@
 		7BAC36EA7CA7762D72910B75 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6987583B11E86743432C7F /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7D6FDE68CB0A312C5820B8BD /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A6346560621788C6C8CFD9 /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7E2A745D173D7A804FB2FA11 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD798264F6A6B5D113E9B7 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8035CF431B0D88450089A396 /* UIViewController+NPHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8035CF421B0D88450089A396 /* UIViewController+NPHierarchy.m */; };
 		847B910F1E3E53964A91C818 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D871357B9B61D4C7A9F13B /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		854772541E2F0286CB98C08A /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A07540F88F498D3C3F3EC86 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		87AEA95B21A95DEED2A11F94 /* UIColor+NPCricket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4BD446B99545FF34ED167 /* UIColor+NPCricket.m */; };
@@ -289,6 +290,8 @@
 		7F87800D41AB69D9E1761CB6 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7FEE77628E619750EB7E8CAF /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
 		7FF4BD446B99545FF34ED167 /* UIColor+NPCricket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NPCricket.m"; sourceTree = "<group>"; };
+		8035CF411B0D88450089A396 /* UIViewController+NPHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NPHierarchy.h"; sourceTree = "<group>"; };
+		8035CF421B0D88450089A396 /* UIViewController+NPHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NPHierarchy.m"; sourceTree = "<group>"; };
 		803B2F0F7D4D5C3B090BE36E /* Pods-Tests-NPCricket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-NPCricket-Private.xcconfig"; path = "../Pods-Tests-NPCricket/Pods-Tests-NPCricket-Private.xcconfig"; sourceTree = "<group>"; };
 		868D0DBEF17B897A0D713CA1 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
 		86C8B86E903A9F0D9A3239F1 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
@@ -447,6 +450,8 @@
 				75A4FED05D1603D3F3480D79 /* UIView+NPScreenshot.m */,
 				DB3120506F4D469F58C4BA03 /* UIView+NPStyle.h */,
 				D4E832F34655460097743C98 /* UIView+NPStyle.m */,
+				8035CF411B0D88450089A396 /* UIViewController+NPHierarchy.h */,
+				8035CF421B0D88450089A396 /* UIViewController+NPHierarchy.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1118,6 +1123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8035CF431B0D88450089A396 /* UIViewController+NPHierarchy.m in Sources */,
 				BB89F2304C3B1C65FC291EDB /* Pods-NPCricket-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
