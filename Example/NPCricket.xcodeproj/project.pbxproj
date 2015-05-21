@@ -21,6 +21,8 @@
 		6F9EC0FB4E3772CF2CBDFF9F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D08401FF7D8175192BE25B7D /* libPods-Tests.a */; };
 		80E09DCA1B0D848C002CC5EF /* NPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E09DC81B0D848C002CC5EF /* NPHomeViewController.m */; };
 		80E09DCB1B0D848C002CC5EF /* NPHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E09DC91B0D848C002CC5EF /* NPHomeViewController.xib */; };
+		80E09DCF1B0D85D3002CC5EF /* NPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E09DCD1B0D85D3002CC5EF /* NPDetailViewController.m */; };
+		80E09DD01B0D85D3002CC5EF /* NPDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E09DCE1B0D85D3002CC5EF /* NPDetailViewController.xib */; };
 		EE141193DCDDFA4FD084DCB7 /* libPods-NPCricket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6667DAD1C5FFC15D6F641F /* libPods-NPCricket.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,9 @@
 		80E09DC71B0D848C002CC5EF /* NPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPHomeViewController.h; sourceTree = "<group>"; };
 		80E09DC81B0D848C002CC5EF /* NPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPHomeViewController.m; sourceTree = "<group>"; };
 		80E09DC91B0D848C002CC5EF /* NPHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPHomeViewController.xib; sourceTree = "<group>"; };
+		80E09DCC1B0D85D3002CC5EF /* NPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPDetailViewController.h; sourceTree = "<group>"; };
+		80E09DCD1B0D85D3002CC5EF /* NPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPDetailViewController.m; sourceTree = "<group>"; };
+		80E09DCE1B0D85D3002CC5EF /* NPDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPDetailViewController.xib; sourceTree = "<group>"; };
 		B6CD11C6F6386AD09E7D0817 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B727A26D6842369F86136B36 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D08401FF7D8175192BE25B7D /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +197,9 @@
 				80E09DC71B0D848C002CC5EF /* NPHomeViewController.h */,
 				80E09DC81B0D848C002CC5EF /* NPHomeViewController.m */,
 				80E09DC91B0D848C002CC5EF /* NPHomeViewController.xib */,
+				80E09DCC1B0D85D3002CC5EF /* NPDetailViewController.h */,
+				80E09DCD1B0D85D3002CC5EF /* NPDetailViewController.m */,
+				80E09DCE1B0D85D3002CC5EF /* NPDetailViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				80E09DCB1B0D848C002CC5EF /* NPHomeViewController.xib in Resources */,
+				80E09DD01B0D85D3002CC5EF /* NPDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +373,7 @@
 				6003F59E195388D20070C39A /* NPAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				80E09DCA1B0D848C002CC5EF /* NPHomeViewController.m in Sources */,
+				80E09DCF1B0D85D3002CC5EF /* NPDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

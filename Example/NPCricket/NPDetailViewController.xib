@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NPDetailViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="farm" translatesAutoresizingMaskIntoConstraints="NO" id="QzC-1M-YxC">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Modal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO5-Vt-wBq">
+                    <rect key="frame" x="154" y="262" width="292" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="BWu-Pk-09H"/>
+                        <constraint firstAttribute="width" constant="292" id="QrV-AZ-SMV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ui-hs-2oj">
+                    <rect key="frame" x="192" y="345" width="216" height="54"/>
+                    <color key="backgroundColor" red="1" green="0.29081467979999998" blue="0.067819214079999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="6jT-F5-ea9"/>
+                        <constraint firstAttribute="height" constant="54" id="kNd-zX-yrx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="5Df-gu-JMe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QzC-1M-YxC" secondAttribute="trailing" id="SuE-xe-Hii"/>
+                <constraint firstAttribute="bottom" secondItem="QzC-1M-YxC" secondAttribute="bottom" id="U1m-0e-0gw"/>
+                <constraint firstItem="QzC-1M-YxC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bS2-4E-Sie"/>
+                <constraint firstItem="2ui-hs-2oj" firstAttribute="top" secondItem="nO5-Vt-wBq" secondAttribute="bottom" constant="8" id="bwu-oO-g0I"/>
+                <constraint firstAttribute="centerX" secondItem="nO5-Vt-wBq" secondAttribute="centerX" id="dD6-IO-zW7"/>
+                <constraint firstAttribute="centerY" secondItem="nO5-Vt-wBq" secondAttribute="centerY" id="eMY-Tx-CaU"/>
+                <constraint firstItem="QzC-1M-YxC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iot-bZ-Dk4"/>
+                <constraint firstAttribute="centerX" secondItem="2ui-hs-2oj" secondAttribute="centerX" id="jKH-1S-ymV"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="farm" width="2250" height="1500"/>
+    </resources>
+</document>

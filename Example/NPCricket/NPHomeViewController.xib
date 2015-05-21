@@ -27,15 +27,33 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iL-Me-Wx0">
+                    <rect key="frame" x="192" y="345" width="216" height="54"/>
+                    <color key="backgroundColor" red="1" green="0.29081467975526942" blue="0.067819214078972956" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="UU9-Xo-JEu"/>
+                        <constraint firstAttribute="width" constant="216" id="dnl-aR-uTU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="Show modal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showModalButtonPressed:" destination="-1" eventType="touchUpInside" id="ohr-VV-3rE"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="dyt-FC-eZg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="72B-5w-OVg"/>
+                <constraint firstItem="5iL-Me-Wx0" firstAttribute="top" secondItem="PIU-Cs-Hbb" secondAttribute="bottom" constant="8" id="F2a-Al-z1o"/>
                 <constraint firstAttribute="trailing" secondItem="dyt-FC-eZg" secondAttribute="trailing" id="Fa2-xk-HHd"/>
                 <constraint firstAttribute="centerY" secondItem="PIU-Cs-Hbb" secondAttribute="centerY" id="Qub-tW-bjo"/>
                 <constraint firstAttribute="bottom" secondItem="dyt-FC-eZg" secondAttribute="bottom" id="SYA-oH-JZt"/>
                 <constraint firstItem="dyt-FC-eZg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c64-Oy-Cxu"/>
                 <constraint firstAttribute="centerX" secondItem="PIU-Cs-Hbb" secondAttribute="centerX" id="jL7-ts-anW"/>
+                <constraint firstAttribute="centerX" secondItem="5iL-Me-Wx0" secondAttribute="centerX" id="qJX-BE-xuL"/>
             </constraints>
         </view>
     </objects>
