@@ -1,8 +1,8 @@
 {
   "name": "NPCricket",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "summary": "Allow users to send feedback directly from your iOS app",
-  "description": "                       Allow users to send feedback directly from your iOS app\n",
+  "description": "                       NPCricket is an iOS library that allows you to solicit\n                       feedback from users directly from within your app.\n",
   "homepage": "https://github.com/nebspetrovic/NPCricket",
   "license": "MIT",
   "authors": {
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/nebspetrovic/NPCricket.git",
-    "tag": "0.1.4"
+    "tag": "0.1.6"
   },
   "social_media_url": "https://twitter.com/nebsp",
   "platforms": {

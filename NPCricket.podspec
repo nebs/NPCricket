@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = "NPCricket"
-  s.version          = "0.1.5"
+  s.version          = "0.1.6"
   s.summary          = "Allow users to send feedback directly from your iOS app"
   s.description      = <<-DESC
-                       Allow users to send feedback directly from your iOS app
+                       NPCricket is an iOS library that allows you to solicit
+                       feedback from users directly from within your app.
                        DESC
   s.homepage         = "https://github.com/nebspetrovic/NPCricket"
   s.license          = 'MIT'
