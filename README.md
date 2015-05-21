@@ -16,9 +16,11 @@ Cricket is an iOS library for sending feedback directly from within the app. It 
 In your app delegate:
 ```objective-c
 #import <NPCricket/NPCricket.h>
+#import <NPCricket/NPNativeEmailHandler.h>
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  [NPCricket useEmailComposerWithToEmailAddress:@"feedback@yourdomain.com"];
+    NPNativeEmailHandler *nativeEmailHandler = [NPNativeEmailHandler handlerWithToEmailAddress:@"feedback@yourdomain.com"];
+    [NPCricket useHandler:nativeEmailHandler];
   // ... your code here ...
   return YES;
 }
