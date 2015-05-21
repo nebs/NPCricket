@@ -16,13 +16,7 @@
 #define COCOAPODS_POD_AVAILABLE_NPCricket
 #define COCOAPODS_VERSION_MAJOR_NPCricket 0
 #define COCOAPODS_VERSION_MINOR_NPCricket 1
-#define COCOAPODS_VERSION_PATCH_NPCricket 3
-
-// NPCricket/NativeEmail
-#define COCOAPODS_POD_AVAILABLE_NPCricket_NativeEmail
-#define COCOAPODS_VERSION_MAJOR_NPCricket_NativeEmail 0
-#define COCOAPODS_VERSION_MINOR_NPCricket_NativeEmail 1
-#define COCOAPODS_VERSION_PATCH_NPCricket_NativeEmail 3
+#define COCOAPODS_VERSION_PATCH_NPCricket 4
 
 // Specta
 #define COCOAPODS_POD_AVAILABLE_Specta
