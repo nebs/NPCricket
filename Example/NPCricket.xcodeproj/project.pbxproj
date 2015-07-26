@@ -17,12 +17,12 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6F9EC0FB4E3772CF2CBDFF9F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D08401FF7D8175192BE25B7D /* libPods-Tests.a */; };
 		80E09DCA1B0D848C002CC5EF /* NPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E09DC81B0D848C002CC5EF /* NPHomeViewController.m */; };
 		80E09DCB1B0D848C002CC5EF /* NPHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E09DC91B0D848C002CC5EF /* NPHomeViewController.xib */; };
 		80E09DCF1B0D85D3002CC5EF /* NPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E09DCD1B0D85D3002CC5EF /* NPDetailViewController.m */; };
 		80E09DD01B0D85D3002CC5EF /* NPDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E09DCE1B0D85D3002CC5EF /* NPDetailViewController.xib */; };
+		80EDFCBA1B64A288005FEFEF /* NPCricketSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EDFCB91B64A288005FEFEF /* NPCricketSpecs.m */; };
 		EE141193DCDDFA4FD084DCB7 /* libPods-NPCricket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6667DAD1C5FFC15D6F641F /* libPods-NPCricket.a */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,6 @@
 		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		764EF523C498C619A15B8A00 /* Pods-NPCricket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPCricket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NPCricket/Pods-NPCricket.debug.xcconfig"; sourceTree = "<group>"; };
 		80E09DC71B0D848C002CC5EF /* NPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPHomeViewController.h; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		80E09DCC1B0D85D3002CC5EF /* NPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPDetailViewController.h; sourceTree = "<group>"; };
 		80E09DCD1B0D85D3002CC5EF /* NPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPDetailViewController.m; sourceTree = "<group>"; };
 		80E09DCE1B0D85D3002CC5EF /* NPDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPDetailViewController.xib; sourceTree = "<group>"; };
+		80EDFCB91B64A288005FEFEF /* NPCricketSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCricketSpecs.m; sourceTree = "<group>"; };
 		B6CD11C6F6386AD09E7D0817 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B727A26D6842369F86136B36 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D08401FF7D8175192BE25B7D /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,8 +165,8 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				80EDFCB91B64A288005FEFEF /* NPCricketSpecs.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				80EDFCBA1B64A288005FEFEF /* NPCricketSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
