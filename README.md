@@ -7,9 +7,9 @@
 
 ## About
 
-Cricket is an iOS library for sending feedback directly from within the app. 
+Cricket is an iOS library for sending feedback from within your app. 
 
-#### Sample use case:
+#### Typical Scenario:
 
 1. Alice wants to leave feedback. She shakes her phone.
 2. Cricket grabs a screenshot of the current screen.
@@ -19,9 +19,8 @@ Cricket is an iOS library for sending feedback directly from within the app.
 
 ![GitHub Logo](/demo.gif)
 
-## Example Usage
+## Hello Cricket
 
-In your app delegate:
 ```objective-c
 #import <NPCricket/NPCricket.h>
 #import <NPCricket/NPNativeEmailHandler.h>
@@ -42,9 +41,9 @@ In your app delegate:
 
 ## Overview
 
-Cricket does not show itself automatically. Instead, you must call `[NPCricket show]` yourself. One example would be to show it when the user shakes their phone (see the example above).
+Cricket does not show itself automatically. Instead, you must call `[NPCricket show]` yourself. The example above uses a shake gesture to trigger Cricket. It also sends the feedback via email. You can customize and configure both of these things to your liking.
 
-Cricket is designed to be extensible by relying on "handlers" to process the feedback. Any class can become a handler by conforming to the `NPCricketHandler` protocol. This way you could for example send the feedback directly to your server via a custom API.
+Cricket uses "handlers" to process feedback. Any class can become a handler by conforming to the `NPCricketHandler` protocol. An example of a custom handler could be something that sends feedback directly to your server.
 
 For your convenience I've included a handler for using the built-in email composer (`NPEmailComposerHandler`)
 
@@ -67,7 +66,7 @@ If you want to create your own handler simply create a class that conforms to `N
 @end
 ```
 
-Then you simply tell `NPCricket` to use it, like so:
+Don't forget to tell `NPCricket` to use your handler.
 ```objective-c
 MyCustomHandler *myCustomHandler = [[MyCustomHandler alloc] init];
 [NPCricket useHandler:myCustomHandler];
