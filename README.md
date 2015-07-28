@@ -7,7 +7,15 @@
 
 ## About
 
-Cricket is an iOS library for sending feedback directly from within the app. It grabs a screenshot, some feedback and sends the data to wherever you want (see overview below for details).
+Cricket is an iOS library for sending feedback directly from within the app. 
+
+#### Sample use case:
+
+1. Alice wants to leave feedback. She shakes her phone.
+2. Cricket grabs a screenshot of the current screen.
+3. Alice draws a rectangle around a button she doesn't like.
+4. She writes "I hate buttons!"
+5. Cricket attaches the annotated screenshot to an email and Alice sends it.
 
 ![GitHub Logo](/demo.gif)
 
