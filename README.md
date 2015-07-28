@@ -45,7 +45,7 @@ Cricket does not show itself automatically. Instead, you must call `[NPCricket s
 
 Cricket uses "handlers" to process feedback. Any class can become a handler by conforming to the `NPCricketHandler` protocol. An example of a custom handler could be something that sends feedback directly to your server.
 
-For your convenience I've included a handler for using the built-in email composer (`NPEmailComposerHandler`)
+For your convenience I've included a handler for using the built-in email composer (`NPNativeEmailHandler`)
 
 ## Creating Handlers
 
