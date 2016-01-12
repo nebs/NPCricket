@@ -23,6 +23,8 @@
 		80E09DCF1B0D85D3002CC5EF /* NPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E09DCD1B0D85D3002CC5EF /* NPDetailViewController.m */; };
 		80E09DD01B0D85D3002CC5EF /* NPDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E09DCE1B0D85D3002CC5EF /* NPDetailViewController.xib */; };
 		80EDFCBA1B64A288005FEFEF /* NPCricketSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EDFCB91B64A288005FEFEF /* NPCricketSpecs.m */; };
+		88201AE51C45B76D0042C81A /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88201AE41C45B76D0042C81A /* ContactsUI.framework */; };
+		88201AE71C45B7740042C81A /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88201AE61C45B7740042C81A /* Contacts.framework */; };
 		EE141193DCDDFA4FD084DCB7 /* libPods-NPCricket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6667DAD1C5FFC15D6F641F /* libPods-NPCricket.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		80E09DCD1B0D85D3002CC5EF /* NPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPDetailViewController.m; sourceTree = "<group>"; };
 		80E09DCE1B0D85D3002CC5EF /* NPDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPDetailViewController.xib; sourceTree = "<group>"; };
 		80EDFCB91B64A288005FEFEF /* NPCricketSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCricketSpecs.m; sourceTree = "<group>"; };
+		88201AE41C45B76D0042C81A /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		88201AE61C45B7740042C81A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		B6CD11C6F6386AD09E7D0817 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B727A26D6842369F86136B36 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D08401FF7D8175192BE25B7D /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88201AE71C45B7740042C81A /* Contacts.framework in Frameworks */,
+				88201AE51C45B76D0042C81A /* ContactsUI.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -130,6 +136,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88201AE61C45B7740042C81A /* Contacts.framework */,
+				88201AE41C45B76D0042C81A /* ContactsUI.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
