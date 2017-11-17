@@ -1,3 +1,6 @@
+# ⚠️ DEPRECATED ⚠️
+NPCricket has been deprecated and is no longer supported. Consider using the new [Cricket](https://github.com/nebs/Cricket) instead (re-written in Swift).
+
 # NPCricket
 
 [![CI Status](http://img.shields.io/travis/nebspetrovic/NPCricket.svg?style=flat)](https://travis-ci.org/nebspetrovic/NPCricket)
